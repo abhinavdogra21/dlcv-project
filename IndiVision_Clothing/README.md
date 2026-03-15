@@ -4,7 +4,7 @@
 
 ## Overview
 
-A large-scale image classification dataset of **Indian Traditional Clothing** containing **3,950 images** across **13 culturally distinct garment categories**. Built to fill the gap in Western-centric computer vision datasets by providing India-specific clothing data.
+A large-scale image classification dataset of **Indian Traditional Clothing** containing **3,218 images** across **12 culturally distinct garment categories**. Built to fill the gap in Western-centric computer vision datasets by providing India-specific clothing data.
 
 Inspired by: **Fashion-101 / Indo Fashion Dataset**
 
@@ -14,8 +14,8 @@ Inspired by: **Fashion-101 / Indo Fashion Dataset**
 
 | Metric | Value |
 |---|---|
-| Total images | 3,950 |
-| Number of classes | 13 |
+| Total images | 3,218 |
+| Number of classes | 12 |
 | Image format | JPEG (.jpg) |
 | Image resolution | 224 × 224 px |
 | Train / Val / Test | 70% / 15% / 15% |
@@ -26,19 +26,18 @@ Inspired by: **Fashion-101 / Indo Fashion Dataset**
 
 | Class | Count | Description |
 |---|---|---|
-| `Saree` | 350 | Traditional draped garment; cotton, georgette, silk variants |
-| `Lehenga` | 350 | Flared skirt + blouse (choli); bridal, embroidered, ghagra |
-| `Salwar_Kameez` | 350 | Tunic + loose trousers; Anarkali, churidar, Patiala styles |
-| `Kurti` | 350 | Short/long tunic worn with leggings or palazzos |
-| `Blouse` | 350 | Women's fitted top; worn under saree or lehenga |
-| `Sherwani` | 350 | Men's long coat-like formal/wedding garment |
-| `Kurta_Pajama` | 350 | Men's traditional kurta + loose trousers |
-| `Dhoti_Kurta` | 350 | Men's dhoti (unstitched wrap) + kurta |
-| `Nehru_Jacket` | 350 | Men's sleeveless/short-sleeved collarless jacket |
-| `Palazzo` | 350 | Wide-leg women's trousers; ethnic Indian fashion |
-| `Bandhani` | 150 | Tie-dye fabric with circular dot patterns (Rajasthan/Gujarat) |
-| `Banarasi_Silk` | 150 | Varanasi handwoven silk with gold/silver zari brocade |
-| `Kanjeevaram_Saree` | 150 | South Indian silk saree with wide contrasting borders |
+| `Saree` | 300 | Traditional draped garment; cotton, georgette, silk variants |
+| `Lehenga` | 343 | Flared skirt + blouse (choli); bridal, embroidered, ghagra |
+| `Salwar_kameez` | 350 | Tunic + loose trousers; Anarkali, churidar, Patiala styles |
+| `Kurti` | 346 | Short/long tunic worn with leggings or palazzos |
+| `Blouse` | 300 | Women's fitted top; worn under saree or lehenga |
+| `Sherwani` | 344 | Men's long coat-like formal/wedding garment |
+| `Men's_kurta` | 178 | Men's traditional kurta |
+| `Nehru_Jacket` | 348 | Men's sleeveless/short-sleeved collarless jacket |
+| `Palazzo` | 305 | Wide-leg women's trousers; ethnic Indian fashion |
+| `Bandhani` | 124 | Tie-dye fabric with circular dot patterns (Rajasthan/Gujarat) |
+| `Banarasi_Silk` | 147 | Varanasi handwoven silk with gold/silver zari brocade |
+| `Kanjeevaram_Saree` | 133 | South Indian silk saree with wide contrasting borders |
 
 ---
 
@@ -47,9 +46,9 @@ Inspired by: **Fashion-101 / Indo Fashion Dataset**
 ```
 IndiVision_Clothing/
 ├── images/
-│   ├── train/          # 70% split — 2755 images
-│   ├── val/            # 15% split — 586 images
-│   └── test/           # 15% split — 609 images
+│   ├── train/          # 70% split — 2254 images
+│   ├── val/            # 15% split — 483 images
+│   └── test/           # 15% split — 481 images
 ├── annotations/
 │   └── metadata.csv    # Full annotation with split info
 ├── metadata/
@@ -70,9 +69,9 @@ IndiVision_Clothing/
 
 | Split | Purpose | Size |
 |---|---|---|
-| **train** | Used to train / fine-tune the model | 2,755 (70%) |
-| **val** | Monitor model accuracy during training; tune hyperparameters | 586 (15%) |
-| **test** | Final evaluation — model never sees this during training | 609 (15%) |
+| **train** | Used to train / fine-tune the model | 2,254 (70%) |
+| **val** | Monitor model accuracy during training; tune hyperparameters | 483 (15%) |
+| **test** | Final evaluation — model never sees this during training | 481 (15%) |
 
 ---
 
