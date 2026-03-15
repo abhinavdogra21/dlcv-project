@@ -80,10 +80,10 @@ IndiVision_Clothing/
 
 `metadata/annotations.csv` — per the project PDF specification:
 
-```
-image_id, filename, label, annotator, date, source
-1, Saree_00001.jpg, Saree, auto, 2026-03-15, miscellanious_roboflow
-2, Lehenga_00010.jpg, Lehenga, auto, 2026-03-15, lehngas_folder
+```csv
+image_id,filename,label,annotator,date,source
+1,Saree_00001.jpg,Saree,Abhinav Dogra,2026-02-15,cbazaar.com
+2,Lehenga_00351.jpg,Lehenga,Kartik Sansanwal,2026-03-13,craftcouncil.in
 ```
 
 ### Image Naming Convention
@@ -96,12 +96,11 @@ Example: Banarasi_Silk_00042.jpg
 
 ## Data Sources & Licensing
 
-| Source | License | Notes |
-|---|---|---|
-| IndoFashion Dataset (Amazon images) | Research use | JSONL annotated, 15 classes |
-| Kouture Kurta Dataset | Research use | 20K kurta catalog images |
-| Roboflow INDIAN DRESSES | CC BY 4.0 | 20-class classification set |
-| Lehngas folder | Personal collection | High-quality lehenga images |
+| Source Type | Examples | License | Notes |
+|---|---|---|---|
+| **E-commerce Websites** | `ajio.com`, `biba.in`, `cbazaar.com`, `craftsvilla.com`, `fabindia.com`, `limeroad.com`, `myntra.com`, `nykafashion.com`, `pantaloons.com`, `tatacliq.com`, `utsavfashion.com`, `westside.com` | Fair Use / Research Use | High-quality catalog images of Indian clothing. |
+| **Government & Handicraft Portals** | `handlooms.nic.in`, `india.gov.in/textiles`, `texmin.nic.in`, `craftcouncil.in`, `sikshalochan.nic.in` | Open / Fair Use | Authentic handloom and textile archives. |
+| **Educational Institutions** | `nift.ac.in` | Research Use | Fashion and textile design reference images. |
 
 ---
 
